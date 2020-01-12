@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Wardlaw's Cookbook</title>
+        <meta charset="UTF-8">
+        <title>Wardlaw's Recipe Scrapbook</title>
         <style>
             body { font-family:'Courier New', Courier, monospace }
         </style>
@@ -9,14 +11,21 @@
     <body>  
         <h1>Wardlaw's Scrapbook</h1>
         <p>
-            <i>Next project: indexing!</i>
+            <i>
+                We have a very simple index for the first 20 pages of recipes! If you'd
+                like to contribute to the effort, please check out the
+                <a href="https://github.com/peat/wardlaw">repo</a> or consider donating
+                a couple of bucks to
+                <a href="https://www.gofundme.com/f/wardlaws-scrapbook">Wardlaw's Scrapbook fund</a>.
+                Cheers!
+            </i>
         </p>
         <p>
             <select name="recipe" id="recipe-select" onchange="goToRecipe()"></select>
         </p>
         <p>
             <button onclick="previousPage()">&laquo;</button>
-            <select name="page" id="page-select" onchange="changePage()"></select>
+            <select name="page" id="page-select" onchange="goToPage()"></select>
             <button onclick="nextPage()">&raquo;</button>
         </p>
 
@@ -28,7 +37,6 @@
 
     <script>
         setupNav();
-        setupRecipeSelector();
     </script>
 </html>
 

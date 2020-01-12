@@ -5,7 +5,7 @@ const MAX_PAGE = 186;
 // arrow keys
 function setupNav() {
     setupPageSelector();
-    document.onkeydown = checkKey;
+    setupRecipeSelector();
 }
 
 // setup page selector
@@ -78,16 +78,4 @@ function previousPage() {
         goToPage();
     }
 }
-
-// handles left/right arrow key presses
-function checkKey() {
-    var e = e || window.event;
-
-    if (e.keyCode == '37') {
-        previousPage();
-    } else if (e.keyCode == '39') {
-        nextPage();
-    }
-}
-
 
