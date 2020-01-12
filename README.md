@@ -13,3 +13,7 @@ This project is pretty straight forward: make the scrapbook available online for
 ### Contributing
 
 Do you enjoy recipe hunting? [Add some recipes to the index ...](https://docs.google.com/spreadsheets/d/1BnPGsbEXByE9K92lJQTtmFJI5rmaP51xE8SkKGVotSI/edit?usp=sharing)
+
+### Original Scans
+
+If you're looking for the original scans (600 DPI), check out the `img/originals` directory. The total size of this repo is around 1.2 GB. Another way to view the files is on [archive.org](https://archive.org/details/wardlaws-scrapbook).
