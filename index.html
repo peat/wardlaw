@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Wardlaw's Recipe Scrapbook</title>
-        <style>
-            body { font-family:'Courier New', Courier, monospace }
-        </style>
-    </head>
 
-    <body>  
-        <h1>Wardlaw's Scrapbook</h1>
-        <p>
-            <i>
-                We have a very simple index for the first 20 pages of recipes! If you'd
-                like to contribute to the effort,
-                please <a href="https://docs.google.com/spreadsheets/d/1BnPGsbEXByE9K92lJQTtmFJI5rmaP51xE8SkKGVotSI/edit?usp=sharing">help with the indexing</a>,
-                check out the <a href="https://github.com/peat/wardlaw">repo</a>,
-                or consider donating a couple of bucks to <a href="https://www.gofundme.com/f/wardlaws-scrapbook">Wardlaw's Scrapbook fund</a>.
-                Cheers!
-            </i>
-        </p>
+<head>
+    <meta charset="UTF-8">
+    <title>Wardlaw's Recipe Scrapbook</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #navigation {
+            text-align: center;
+            border-top: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wardlaw's Scrapbook</h1>
+    <p>
+        New here? <a href="https://www.gofundme.com/f/wardlaws-scrapbook">Read what this is all about</a>! 👍
+    </p>
+    <p>
+        <i>
+            Update: We have a very simple index for the first 20 pages of recipes!
+        </i>
+    </p>
+    <p>
+        If you'd like to contribute to this project, please <a href="https://docs.google.com/spreadsheets/d/1BnPGsbEXByE9K92lJQTtmFJI5rmaP51xE8SkKGVotSI/edit?usp=sharing">help with the indexing</a>, check out the <a href="https://github.com/peat/wardlaw">repo</a>, or consider donating a couple of bucks to <a href="https://www.gofundme.com/f/wardlaws-scrapbook">Wardlaw's Scrapbook fund</a>. Cheers!
+    </p>
+    <div id="navigation">
         <p>
             <select name="recipe" id="recipe-select" onchange="goToRecipe()"></select>
         </p>
@@ -28,15 +38,16 @@
             <select name="page" id="page-select" onchange="goToPage()"></select>
             <button onclick="nextPage()">&raquo;</button>
         </p>
+    </div>
 
-        <img id="page-view" src="img/medium/page-1.jpg">
-    </body>
+    <img id="page-view" src="img/medium/page-1.jpg">
+</body>
 
-    <script src="recipes.js"></script>
-    <script src="nav.js"></script>
+<script src="recipes.js"></script>
+<script src="nav.js"></script>
 
-    <script>
-        setupNav();
-    </script>
+<script>
+    setupNav();
+</script>
+
 </html>
-
