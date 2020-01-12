@@ -1,1 +1,67 @@
-<p>Wardlaw's Scrapbook</p>
+<html>
+    <head>
+        <title>Wardlaw's Cookbook</title>
+        <style>
+            body { font-family:'Courier New', Courier, monospace }
+        </style>
+        <script>
+            const MIN_PAGE = 1;
+            const MAX_PAGE = 186;
+
+            // populates the list of selectable pages
+            function init() {
+                var root = document.getElementById("page-select");
+                for (var i = MIN_PAGE; i <= MAX_PAGE; i++) {
+                    var opt = document.createElement("option");
+                    opt.text = "Page " + i;
+                    opt.value = i;
+                    root.appendChild(opt);
+                }                
+            }
+
+            // updates the image when the new page is selected
+            function changePage() {
+                var index = document.getElementById("page-select").value;
+                document.getElementById("page-view").src = "img/medium/page-" + index + ".jpg";
+            }
+
+            // moves to the next page
+            function nextPage() {
+                var pageSelector = document.getElementById("page-select");
+                if (pageSelector.value < MAX_PAGE) {
+                    pageSelector.value++;
+                    changePage();
+                }
+            }
+
+            // moves to the previous page
+            function previousPage() {
+                var pageSelector = document.getElementById("page-select");
+                if (pageSelector.value > MIN_PAGE) {
+                    pageSelector.value--;
+                    changePage();
+                }
+            }
+
+
+        </script>
+    </head>
+
+    <body>  
+        <h1>Wardlaw's Scrapbook</h1>
+        <p>
+            <i>Next project: indexing!</i>
+        </p>
+        <p>
+            <button onclick="previousPage()">&laquo;</button>
+            <select name="page" id="page-select" onchange="changePage()"></select>
+            <button onclick="nextPage()">&raquo;</button>
+        </p>
+
+        <img id="page-view" src="img/medium/page-1.jpg">
+    </body>
+    <script>
+        init();
+    </script>
+</html>
+
