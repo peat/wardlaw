@@ -43,6 +43,17 @@
                 }
             }
 
+            // handles left/right arrow key presses
+            function checkKey() {
+                var e = e || window.event;
+
+                if (e.keyCode == '37') {
+                    previousPage();
+                } else if (e.keyCode = '39') {
+                    nextPage();
+                }
+            }
+
 
         </script>
     </head>
@@ -62,6 +73,7 @@
     </body>
     <script>
         init();
+        document.onkeydown = checkKey;
     </script>
 </html>
 
