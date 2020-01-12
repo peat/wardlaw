@@ -12,4 +12,4 @@ This project is pretty straight forward: make the scrapbook available online for
 
 ### Contributing
 
-The scrapbook has been scanned ... now it's a matter of creating an index for all of the recipes and topics in the book.
+Do you enjoy recipe hunting? [Add some recipes to the index ...](https://docs.google.com/spreadsheets/d/1BnPGsbEXByE9K92lJQTtmFJI5rmaP51xE8SkKGVotSI/edit?usp=sharing)
